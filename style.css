@@ -9,13 +9,17 @@ html {
   *::after{
       box-sizing: border-box;
   }
+  a{
+      text-decoration: none;
+      color: inherit;
+  }
   body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg-color);
     color:var(--text-color);
     font-style: normal;
     font-weight: normal;
-    font-size: 33px;
+    font-size: 16px;
     line-height: 170%;
     letter-spacing: 0.03em;
   }
@@ -84,4 +88,194 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  /* sections__box */
+    .sections__boxes{
+        padding-top:8rem;
+    }
+    .sections__box-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:20px;
+    }
+  .title{
+    font-family: 'Poppins' sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--header-color);
+  }
+  /* profile */
+  .profile{
+      margin-bottom: 40px;
+  }
+  .profile__description{
+      padding-top:2rem;
+      max-width: 400px;
+  }
+
+  .profile__information{
+      margin-top:3rem;
+      color:#000000;
+  }
+  .profile__information-item:not(:last-child){
+      margin-bottom: 10px;
+}
+  .profile__information-link{
+      position: relative;
+      padding-left: 40px;
+  }
+
+  .profile__information-link::before{
+      position: absolute;
+      content: " ";
+      width: 20px;
+      height: 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      left:0;
+      top:0;
+  }
+  .profile__information-link--phone::before{
+      background-image: url(./profileIcons/phone.svg);
+  }
+  .profile__information-link--email::before{
+      background-image: url(./profileIcons/letter.svg);
+  }
+  .profile__information-link--location::before{
+    background-image: url(./profileIcons/location.svg);
+  }
+  /* education */
+  .education__title{
+      position:relative;
+      padding-left:50px;
+  }
+  .education__title::before{
+      position: absolute;
+      content: "";
+      left: 0;
+      top:-14px;
+      width:40px;
+      height: 40px;
+      background-image: url(./education/educationLogo.svg);
+      background-size: cover;
+      background-position: center;
+  }
+  .education__information{
+      margin-top: 20px;
+  }
+  .education__information-item{
+      padding-left:50px;
+  }
+  .education__information-item:not(:last-child){
+      margin-bottom: 20px;
+  }
+  .education__information-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:#333333;
+  }
+  .education__information-interval{
+      display: block;
+      position:relative;
+      padding-left:36px;
+  }
+  .education__information-interval::before{
+      position: absolute;
+      content: " ";
+      width: 26px;
+      height: 2px;
+      background-color: var(--text-color);
+      left:0;
+      transform: translateY(12px);
+
+  }
+  /* skills */
+  .skill-name{
+      display: block;
+  }
+  .skills__box{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap:40px;
+      padding-top:20px;
+  }
+  .skills__box-item{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .skills__box-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:#333333;
+  }
+  .skills__box-bar{
+      position: relative;
+      display: block;
+      width:180px;
+      height: 5px;
+      background-color: #c4c4c4;
+      
+  }
+  .skills__box-bar::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    left: 0;
+    top: 0;
+    background-color: var(--bg-color);
+   
+  }
+  .skills__box-bar--figma::before{
+    width: 40px;
+  }
+  .skills__box-bar--javaScript::before{
+    width: 80px;
+  }
+  .skills__box-bar--html::before{
+    width: 140px;
+  }
+  .skills__box-bar--java::before{
+    width: 50px;
+  }
+  .skills__box-bar--sharp::before{
+    width: 70px;
+  }
+  .skills__box-bar--sql::before{
+    width: 40px;
+  }
+  /* english */
+  .english{
+      margin-top: 60px;
+  }
+  .english__description{
+    padding-left: 20px;
+    margin-top:30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:#333333;
   }
