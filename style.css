@@ -367,3 +367,16 @@ html {
   .projects__slider .slick-track{
       display: flex;
   }
+  /* footer */
+  .footer{
+      margin-top: 40px;
+  }
+  .footer-content{
+      display: flex;
+      justify-content: space-between;
+  }
+  .rs-github{
+      width: 48px;
+      height: 48px;
+      display: block;
+  }
