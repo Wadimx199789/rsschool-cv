@@ -21,8 +21,6 @@ I have strong expertise in adaptive, semantic, and accessible markup, and I've w
 
 I’m experienced in developing both individual features and full products, collaborating in agile teams or leading parts of a project from scratch.
 
-I also taught the “Front-End Development” course at STEP IT Academy, mentoring students in HTML/CSS, JavaScript, and modern frameworks.
-
 I’m passionate about clean code, modular architecture, smooth UX.
 
 ---
@@ -30,12 +28,14 @@ I’m passionate about clean code, modular architecture, smooth UX.
 ## Technical Skills
 
 - 🛠 **Core Stack:** Vue 3, TypeScript, Tailwind CSS, Vite, Pinia, Vuex
+- 🏗 **Architecture:** Feature-Sliced Design (FSD), component-driven development, BEM
 - ⚛️ **React Stack:** React, Next.js, Redux, Redux Toolkit (RTK), MobX
 - 🔄 **Data Fetching:** TanStack Query (React Query), RTK Query, Axios, WebSocket
 - 📐 **UI Expertise:** Advanced layout (semantic HTML, accessibility, responsiveness), streaming content rendering, real-time UI interactions, ChatGPT-like client UIs
 - 📊 **Analytics & Experimentation:** A/B testing, feature flags (GrowthBook, Amplitude)
-- 💳 **Payment Integrations:** Stripe, Paddle, PayPal
+- 💳 **Payment Integrations:** Stripe, Paddle, PayPal, Apple Pay
 - 💻 **Languages & Styling:** JavaScript, TypeScript, SCSS/SASS, LESS
+- 🖥 **Backend:** Node.js, Next.js API routes, REST
 - 🗄 **Databases & BaaS:** PostgreSQL, MySQL, MongoDB, Firebase
 - ⚙️ **Build & CI:** Vite, Webpack, Gulp, Git, GitHub, GitLab, CI/CD
 - 🔌 **API Tooling:** Postman, Swagger
@@ -45,6 +45,18 @@ I’m passionate about clean code, modular architecture, smooth UX.
 ---
 
 ## Professional Experience
+
+### Software Engineer · PrimeTech Apps
+
+_Apr 2026 — Present · Minsk, Belarus_
+
+Building [ChatbotGo](https://app.chatbotgo.ai/), an AI assistant web application, as part of the team behind Chatbox.
+
+- Develop the product front end in React and TypeScript, structuring the codebase with Feature-Sliced Design (FSD) so features stay isolated and reusable as the app grows.
+- Implement the conversational interface — streaming assistant responses, markdown and code rendering, conversation history and model switching.
+- Design the client-side data layer with Redux Toolkit and TanStack Query, keeping request state, caching and error handling predictable across the app.
+- Build subscription and payment flows, connecting checkout to the product's paywall and access levels.
+- Instrument features with analytics and feature flags, shipping changes behind A/B tests rather than releasing them blind.
 
 ### Instructor · STEP IT Academy
 
@@ -64,7 +76,7 @@ _May 2022 — Apr 2026 · Minsk, Belarus_
 
 AI product company. Worked across consumer AI products — [Chatbox](https://app.chatbox.ai/), [ChatOn](https://chaton.ai/) and [OnSkin](https://onskin.com/).
 
-- Key front-end developer on Chatbox: led the web application from initial concept, designed and implemented its core architecture, built the MVP from scratch and drove development of new features.
+- Key front-end developer on Chatbox: led the web application from initial concept, built the MVP from scratch and designed its core architecture around Feature-Sliced Design, which kept the codebase maintainable as the product grew into new features.
 - Built the chat interface itself — streaming assistant responses rendered token by token, live markdown and code-block formatting, message history and recovery from dropped connections.
 - Led the front-end integration of Amplitude and GrowthBook — SDK implementation, event tracking and a reusable framework for A/B tests and feature flags that the product team ran experiments on.
 - Integrated payment gateways — Stripe, PayPal, Paddle and Apple Pay — covering checkout flows, transaction states and error handling.
