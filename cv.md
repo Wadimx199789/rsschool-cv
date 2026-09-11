@@ -117,3 +117,9 @@ Web studio projects: landing pages, corporate and promo sites delivered from des
 ### Bachelor's Degree · Belarusian State University of Informatics and Radioelectronics (BSUIR)
 
 _2015 — 2020 · Faculty of Radioengineering and Electronics · Minsk, Belarus_
+
+---
+
+## Additional Information
+
+**Languages:** Russian (Native), English (B1 — Intermediate)
