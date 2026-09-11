@@ -112,6 +112,34 @@ Web studio projects: landing pages, corporate and promo sites delivered from des
 
 ---
 
+## Code Example
+
+Binary search over a sorted array — O(log n) lookup.
+
+```ts
+export function binarySearch(items: number[], target: number): number {
+  let low = 0;
+  let high = items.length - 1;
+
+  while (low <= high) {
+    const mid = low + Math.floor((high - low) / 2);
+    const value = items[mid];
+
+    if (value === target) return mid;
+
+    if (value < target) {
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    }
+  }
+
+  return -1;
+}
+```
+
+---
+
 ## Education
 
 ### Bachelor's Degree · Belarusian State University of Informatics and Radioelectronics (BSUIR)
