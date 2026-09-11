@@ -109,3 +109,11 @@ Web studio projects: landing pages, corporate and promo sites delivered from des
 - Integrated layouts with CMS templates and connected forms to backend endpoints, handling loading, success and error states.
 - Optimised page load through image compression, lazy loading and asset bundling with Gulp and Webpack.
 - Worked in Git flow with feature branches and code review, iterating on designer and client feedback under studio deadlines.
+
+---
+
+## Education
+
+### Bachelor's Degree · Belarusian State University of Informatics and Radioelectronics (BSUIR)
+
+_2015 — 2020 · Faculty of Radioengineering and Electronics · Minsk, Belarus_
