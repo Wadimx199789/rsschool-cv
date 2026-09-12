@@ -98,6 +98,70 @@ a:focus-visible {
   box-shadow: 0 10px 30px -10px var(--color-shadow);
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header__photo {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header__name {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.header__position {
+  margin-top: 4px;
+  font-size: 20px;
+  color: var(--color-text-secondary);
+}
+
+.header__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 20px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+  list-style: none;
+}
+
+.header__contact {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header__icon {
+  flex-shrink: 0;
+  width: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .header {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .header__contacts {
+    justify-content: flex-start;
+  }
+}
+
 @media print {
   @page {
     size: A4 portrait;
