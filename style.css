@@ -1,7 +1,129 @@
+:root {
+  --font-family:
+    "Noto Serif", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-blue-900: #12263f;
+  --color-blue-800: #1b3a5c;
+  --color-blue-700: #24547e;
+  --color-blue-600: #33699a;
+  --color-blue-300: #8fabc7;
+  --color-blue-100: #d3dfeb;
+  --color-blue-50: #e6edf5;
+
+  --color-bg-page: var(--color-blue-100);
+  --color-bg-card: #ffffff;
+  --color-bg-accent-soft: var(--color-blue-50);
+
+  --color-text-primary: var(--color-blue-900);
+  --color-text-secondary: var(--color-blue-800);
+  --color-text-muted: #4d6785;
+
+  --color-accent: var(--color-blue-700);
+  --color-border: var(--color-blue-300);
+  --color-shadow: rgba(18, 38, 63, 0.18);
+
+  --content-max-width: 1000px;
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-page);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: var(--content-max-width);
+  margin: 32px auto;
+  padding: clamp(16px, 4vw, 48px) clamp(16px, 5vw, 64px);
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 30px -10px var(--color-shadow);
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 16mm 15mm;
+  }
+
+  body {
+    background-color: var(--color-bg-card);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .resume {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    break-after: avoid-page;
+  }
 }
