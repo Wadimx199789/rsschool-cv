@@ -151,6 +151,29 @@ a:focus-visible {
   text-align: center;
 }
 
+.section__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  font-size: 20px;
+  color: var(--color-accent);
+  background-color: var(--color-bg-accent-soft);
+}
+
+.section__icon {
+  width: 18px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
 @media (min-width: 576px) {
   .header {
     flex-direction: row;
