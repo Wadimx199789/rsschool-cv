@@ -262,7 +262,9 @@ a:focus-visible {
   font-weight: 600;
 }
 
-.experience__dates {
+.experience__dates,
+.education__dates,
+.languages__level {
   padding: 2px 8px;
   font-size: 13px;
   color: var(--color-accent);
@@ -271,7 +273,8 @@ a:focus-visible {
   border-radius: 10px;
 }
 
-.experience__meta {
+.experience__meta,
+.education__meta {
   font-size: 14px;
   font-style: italic;
   color: var(--color-text-muted);
@@ -305,6 +308,42 @@ a:focus-visible {
 
 .experience__point + .experience__point {
   margin-top: 6px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.education__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2px 16px;
+}
+
+.education__degree {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  list-style: none;
+}
+
+.languages__item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.languages__name {
+  font-weight: 600;
 }
 
 .link {
