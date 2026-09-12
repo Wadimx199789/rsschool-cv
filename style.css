@@ -1,7 +1,6 @@
 :root {
   --font-family:
     "Noto Serif", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-
   --color-blue-900: #12263f;
   --color-blue-800: #1b3a5c;
   --color-blue-700: #24547e;
@@ -9,19 +8,15 @@
   --color-blue-300: #8fabc7;
   --color-blue-100: #d3dfeb;
   --color-blue-50: #e6edf5;
-
   --color-bg-page: var(--color-blue-100);
   --color-bg-card: #ffffff;
   --color-bg-accent-soft: var(--color-blue-50);
-
   --color-text-primary: var(--color-blue-900);
   --color-text-secondary: var(--color-blue-800);
   --color-text-muted: #4d6785;
-
   --color-accent: var(--color-blue-700);
   --color-border: var(--color-blue-300);
   --color-shadow: rgba(18, 38, 63, 0.18);
-
   --content-max-width: 1000px;
 }
 
@@ -119,8 +114,10 @@ a:focus-visible {
   background-color: transparent;
   border: 1px solid var(--color-border);
   border-radius: 16px;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
   cursor: pointer;
-  transition: background-color 0.2s, color 0.2s;
 }
 
 .header__print:hover,
