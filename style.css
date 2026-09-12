@@ -176,15 +176,36 @@ a:focus-visible {
 
 .skills {
   display: grid;
-  gap: 10px;
+  gap: 16px;
+}
+
+.skills__group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .skills__name {
+  font-size: 13px;
   font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  text-transform: uppercase;
 }
 
-.skills__items {
+.skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+
+.skills__tag {
+  padding: 3px 10px;
+  font-size: 13px;
   color: var(--color-text-secondary);
+  background-color: var(--color-bg-accent-soft);
+  border-radius: 12px;
 }
 
 .experience {
