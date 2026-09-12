@@ -187,6 +187,109 @@ a:focus-visible {
   color: var(--color-text-secondary);
 }
 
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.experience__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: 26px;
+}
+
+.experience__item::before {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-bg-card);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--color-accent);
+  content: "";
+}
+
+.experience__item::after {
+  position: absolute;
+  top: 24px;
+  bottom: -28px;
+  left: 5px;
+  width: 1px;
+  background-color: var(--color-border);
+  content: "";
+}
+
+.experience__item:last-child::after {
+  display: none;
+}
+
+.experience__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2px 16px;
+}
+
+.experience__role {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.experience__dates {
+  padding: 2px 8px;
+  font-size: 13px;
+  color: var(--color-accent);
+  white-space: nowrap;
+  background-color: var(--color-bg-accent-soft);
+  border-radius: 10px;
+}
+
+.experience__meta {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+.experience__summary {
+  margin-top: 8px;
+}
+
+.experience__points {
+  margin-top: 8px;
+  padding-left: 0;
+  color: var(--color-text-secondary);
+  list-style: none;
+}
+
+.experience__point {
+  position: relative;
+  padding-left: 18px;
+}
+
+.experience__point::before {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 8px;
+  height: 1px;
+  background-color: var(--color-blue-300);
+  content: "";
+}
+
+.experience__point + .experience__point {
+  margin-top: 6px;
+}
+
+.link {
+  text-decoration: underline;
+}
+
 @media (min-width: 576px) {
   .header {
     flex-direction: row;
@@ -232,5 +335,9 @@ a:focus-visible {
   h5,
   h6 {
     break-after: avoid-page;
+  }
+
+  .experience__item {
+    break-inside: avoid-page;
   }
 }
