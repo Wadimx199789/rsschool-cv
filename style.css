@@ -170,6 +170,33 @@ a:focus-visible {
   text-align: center;
 }
 
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.nav__link {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 14px;
+  color: var(--color-accent);
+  background-color: var(--color-bg-accent-soft);
+  border-radius: 14px;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.nav__link:hover,
+.nav__link:focus-visible {
+  color: var(--color-bg-card);
+  background-color: var(--color-accent);
+  text-decoration: none;
+}
+
 .section__title {
   display: flex;
   align-items: center;
@@ -196,6 +223,7 @@ a:focus-visible {
 .skills {
   display: grid;
   gap: 16px;
+  list-style: none;
 }
 
 .skills__group {
@@ -371,13 +399,36 @@ a:focus-visible {
 
 .footer {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: center;
-  gap: 6px;
-  margin-bottom: 32px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: var(--content-max-width);
+  margin: 0 auto 32px;
+  padding: 0 16px;
   font-size: 14px;
   color: var(--color-text-muted);
+}
+
+.footer__course,
+.footer__github {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-secondary);
+}
+
+.footer__github:hover,
+.footer__github:focus-visible {
+  color: var(--color-accent);
+}
+
+.footer__icon {
+  font-size: 16px;
+}
+
+.footer__logo {
+  width: 119px;
+  height: 44px;
 }
 
 @media (min-width: 576px) {
@@ -465,7 +516,8 @@ a:focus-visible {
   }
 
   .footer,
-  .header__print {
+  .header__print,
+  .nav {
     display: none;
   }
 }

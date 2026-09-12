@@ -52,7 +52,17 @@
         </div>
       </header>
 
-      <section class="section">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+          <li class="nav__item"><a class="nav__link" href="#experience">Experience</a></li>
+          <li class="nav__item"><a class="nav__link" href="#education">Education</a></li>
+          <li class="nav__item"><a class="nav__link" href="#languages">Languages</a></li>
+        </ul>
+      </nav>
+
+      <section class="section" id="about">
         <h2 class="section__title">
           <i class="section__icon fa-solid fa-user" aria-hidden="true"></i>
           About
@@ -75,150 +85,128 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="skills">
         <h2 class="section__title">
           <i class="section__icon fa-solid fa-toolbox" aria-hidden="true"></i>
           Skills
         </h2>
         <div class="section__content">
-          <dl class="skills">
-            <div class="skills__group">
-              <dt class="skills__name">Core stack</dt>
-              <dd class="skills__items">
-                <ul class="skills__tags">
-                  <li class="skills__tag">Vue 3</li>
-                  <li class="skills__tag">TypeScript</li>
-                  <li class="skills__tag">Tailwind CSS</li>
-                  <li class="skills__tag">Vite</li>
-                  <li class="skills__tag">Pinia</li>
-                  <li class="skills__tag">Vuex</li>
-                </ul>
-              </dd>
-            </div>
-            <div class="skills__group">
-              <dt class="skills__name">React stack</dt>
-              <dd class="skills__items">
-                <ul class="skills__tags">
-                  <li class="skills__tag">React</li>
-                  <li class="skills__tag">Next.js</li>
-                  <li class="skills__tag">Redux</li>
-                  <li class="skills__tag">Redux Toolkit</li>
-                  <li class="skills__tag">MobX</li>
-                </ul>
-              </dd>
-            </div>
-            <div class="skills__group">
-              <dt class="skills__name">Architecture</dt>
-              <dd class="skills__items">
-                <ul class="skills__tags">
-                  <li class="skills__tag">Feature-Sliced Design</li>
-                  <li class="skills__tag">Component-driven development</li>
-                  <li class="skills__tag">BEM</li>
-                </ul>
-              </dd>
-            </div>
-            <div class="skills__group">
-              <dt class="skills__name">Data fetching</dt>
-              <dd class="skills__items">
-                <ul class="skills__tags">
-                  <li class="skills__tag">TanStack Query</li>
-                  <li class="skills__tag">RTK Query</li>
-                  <li class="skills__tag">Axios</li>
-                  <li class="skills__tag">WebSocket</li>
-                </ul>
-              </dd>
-            </div>
-            <div class="skills__group">
-              <dt class="skills__name">UI expertise</dt>
-              <dd class="skills__items">
-                <ul class="skills__tags">
-                  <li class="skills__tag">Semantic HTML</li>
-                  <li class="skills__tag">Accessibility</li>
-                  <li class="skills__tag">Responsive layout</li>
-                  <li class="skills__tag">Streaming content</li>
-                  <li class="skills__tag">Real-time interfaces</li>
-                </ul>
-              </dd>
-            </div>
-            <div class="skills__group">
-              <dt class="skills__name">Languages &amp; styling</dt>
-              <dd class="skills__items">
-                <ul class="skills__tags">
-                  <li class="skills__tag">JavaScript</li>
-                  <li class="skills__tag">TypeScript</li>
-                  <li class="skills__tag">SCSS/SASS</li>
-                  <li class="skills__tag">LESS</li>
-                </ul>
-              </dd>
-            </div>
-            <div class="skills__group">
-              <dt class="skills__name">Analytics &amp; experiments</dt>
-              <dd class="skills__items">
-                <ul class="skills__tags">
-                  <li class="skills__tag">A/B testing</li>
-                  <li class="skills__tag">Feature flags</li>
-                  <li class="skills__tag">GrowthBook</li>
-                  <li class="skills__tag">Amplitude</li>
-                </ul>
-              </dd>
-            </div>
-            <div class="skills__group">
-              <dt class="skills__name">Payments</dt>
-              <dd class="skills__items">
-                <ul class="skills__tags">
-                  <li class="skills__tag">Stripe</li>
-                  <li class="skills__tag">Paddle</li>
-                  <li class="skills__tag">PayPal</li>
-                  <li class="skills__tag">Apple Pay</li>
-                </ul>
-              </dd>
-            </div>
-            <div class="skills__group">
-              <dt class="skills__name">Backend &amp; databases</dt>
-              <dd class="skills__items">
-                <ul class="skills__tags">
-                  <li class="skills__tag">Node.js</li>
-                  <li class="skills__tag">Next.js API routes</li>
-                  <li class="skills__tag">REST</li>
-                  <li class="skills__tag">PostgreSQL</li>
-                  <li class="skills__tag">MySQL</li>
-                  <li class="skills__tag">MongoDB</li>
-                  <li class="skills__tag">Firebase</li>
-                </ul>
-              </dd>
-            </div>
-            <div class="skills__group">
-              <dt class="skills__name">Build &amp; tooling</dt>
-              <dd class="skills__items">
-                <ul class="skills__tags">
-                  <li class="skills__tag">Vite</li>
-                  <li class="skills__tag">Webpack</li>
-                  <li class="skills__tag">Gulp</li>
-                  <li class="skills__tag">Git</li>
-                  <li class="skills__tag">GitHub</li>
-                  <li class="skills__tag">GitLab</li>
-                  <li class="skills__tag">CI/CD</li>
-                  <li class="skills__tag">Postman</li>
-                  <li class="skills__tag">Swagger</li>
-                  <li class="skills__tag">Figma</li>
-                  <li class="skills__tag">Zeplin</li>
-                </ul>
-              </dd>
-            </div>
-            <div class="skills__group">
-              <dt class="skills__name">Also worked with</dt>
-              <dd class="skills__items">
-                <ul class="skills__tags">
-                  <li class="skills__tag">Svelte</li>
-                  <li class="skills__tag">Svelte stores</li>
-                </ul>
-              </dd>
-            </div>
-            </dl>
+          <ul class="skills">
+            <li class="skills__group">
+              <h3 class="skills__name">Core stack</h3>
+              <ul class="skills__tags">
+                <li class="skills__tag">Vue 3</li>
+                <li class="skills__tag">TypeScript</li>
+                <li class="skills__tag">Tailwind CSS</li>
+                <li class="skills__tag">Vite</li>
+                <li class="skills__tag">Pinia</li>
+                <li class="skills__tag">Vuex</li>
+              </ul>
+            </li>
+            <li class="skills__group">
+              <h3 class="skills__name">React stack</h3>
+              <ul class="skills__tags">
+                <li class="skills__tag">React</li>
+                <li class="skills__tag">Next.js</li>
+                <li class="skills__tag">Redux</li>
+                <li class="skills__tag">Redux Toolkit</li>
+                <li class="skills__tag">MobX</li>
+              </ul>
+            </li>
+            <li class="skills__group">
+              <h3 class="skills__name">Architecture</h3>
+              <ul class="skills__tags">
+                <li class="skills__tag">Feature-Sliced Design</li>
+                <li class="skills__tag">Component-driven development</li>
+                <li class="skills__tag">BEM</li>
+              </ul>
+            </li>
+            <li class="skills__group">
+              <h3 class="skills__name">Data fetching</h3>
+              <ul class="skills__tags">
+                <li class="skills__tag">TanStack Query</li>
+                <li class="skills__tag">RTK Query</li>
+                <li class="skills__tag">Axios</li>
+                <li class="skills__tag">WebSocket</li>
+              </ul>
+            </li>
+            <li class="skills__group">
+              <h3 class="skills__name">UI expertise</h3>
+              <ul class="skills__tags">
+                <li class="skills__tag">Semantic HTML</li>
+                <li class="skills__tag">Accessibility</li>
+                <li class="skills__tag">Responsive layout</li>
+                <li class="skills__tag">Streaming content</li>
+                <li class="skills__tag">Real-time interfaces</li>
+              </ul>
+            </li>
+            <li class="skills__group">
+              <h3 class="skills__name">Languages &amp; styling</h3>
+              <ul class="skills__tags">
+                <li class="skills__tag">JavaScript</li>
+                <li class="skills__tag">TypeScript</li>
+                <li class="skills__tag">SCSS/SASS</li>
+                <li class="skills__tag">LESS</li>
+              </ul>
+            </li>
+            <li class="skills__group">
+              <h3 class="skills__name">Analytics &amp; experiments</h3>
+              <ul class="skills__tags">
+                <li class="skills__tag">A/B testing</li>
+                <li class="skills__tag">Feature flags</li>
+                <li class="skills__tag">GrowthBook</li>
+                <li class="skills__tag">Amplitude</li>
+              </ul>
+            </li>
+            <li class="skills__group">
+              <h3 class="skills__name">Payments</h3>
+              <ul class="skills__tags">
+                <li class="skills__tag">Stripe</li>
+                <li class="skills__tag">Paddle</li>
+                <li class="skills__tag">PayPal</li>
+                <li class="skills__tag">Apple Pay</li>
+              </ul>
+            </li>
+            <li class="skills__group">
+              <h3 class="skills__name">Backend &amp; databases</h3>
+              <ul class="skills__tags">
+                <li class="skills__tag">Node.js</li>
+                <li class="skills__tag">Next.js API routes</li>
+                <li class="skills__tag">REST</li>
+                <li class="skills__tag">PostgreSQL</li>
+                <li class="skills__tag">MySQL</li>
+                <li class="skills__tag">MongoDB</li>
+                <li class="skills__tag">Firebase</li>
+              </ul>
+            </li>
+            <li class="skills__group">
+              <h3 class="skills__name">Build &amp; tooling</h3>
+              <ul class="skills__tags">
+                <li class="skills__tag">Vite</li>
+                <li class="skills__tag">Webpack</li>
+                <li class="skills__tag">Gulp</li>
+                <li class="skills__tag">Git</li>
+                <li class="skills__tag">GitHub</li>
+                <li class="skills__tag">GitLab</li>
+                <li class="skills__tag">CI/CD</li>
+                <li class="skills__tag">Postman</li>
+                <li class="skills__tag">Swagger</li>
+                <li class="skills__tag">Figma</li>
+                <li class="skills__tag">Zeplin</li>
+              </ul>
+            </li>
+            <li class="skills__group">
+              <h3 class="skills__name">Also worked with</h3>
+              <ul class="skills__tags">
+                <li class="skills__tag">Svelte</li>
+                <li class="skills__tag">Svelte stores</li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="experience">
         <h2 class="section__title">
           <i class="section__icon fa-solid fa-briefcase" aria-hidden="true"></i>
           Experience
@@ -306,7 +294,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="education">
         <h2 class="section__title">
           <i class="section__icon fa-solid fa-user-graduate" aria-hidden="true"></i>
           Education
@@ -326,7 +314,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="languages">
         <h2 class="section__title">
           <i class="section__icon fa-solid fa-earth-americas" aria-hidden="true"></i>
           Languages
