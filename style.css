@@ -350,6 +350,17 @@ a:focus-visible {
   text-decoration: underline;
 }
 
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 32px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
 @media (min-width: 576px) {
   .header {
     flex-direction: row;
@@ -399,5 +410,9 @@ a:focus-visible {
 
   .experience__item {
     break-inside: avoid-page;
+  }
+
+  .footer {
+    display: none;
   }
 }
